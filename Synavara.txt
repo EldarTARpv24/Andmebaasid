@@ -16,3 +16,4 @@ taastamine - восстановление
 päringukeel - язык запроса
 relatsiooni andmebaas - реляционная база данных
 seos - связь
+Piirangud - ограничения
