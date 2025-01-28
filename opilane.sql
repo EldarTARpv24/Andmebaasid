@@ -95,3 +95,19 @@ select *
 from opilane, Language, keeleValik
 where opilane.opilaneId = keeleValik.opilaneId
 and Language.ID=keeleValik.Language
+
+create table oppimine(
+oppimineId int primary key identity(1,1),
+aine varchar(10) not null,
+opilaneId int,
+hinne int,
+opetaja varchar(20)
+foreign key (opilaneId) references opilane(opilaneId)
+)
+
+insert into oppimine(aine, opilaneId, hinne,opetaja)
+values('Math', 1, 5, 'Merk')
+
+select * from oppimine;
+
+drop table oppimine
