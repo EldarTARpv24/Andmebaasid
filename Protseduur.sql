@@ -86,3 +86,8 @@ delete from linn where linnId = deletedid;
 select * from linn;
 end
 
+-- процедура поиска
+begin
+select * from linn
+where linnNimi like CONCAT (taht, '%');
+end
