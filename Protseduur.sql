@@ -91,3 +91,12 @@ begin
 select * from linn
 where linnNimi like CONCAT (taht, '%');
 end
+
+--Обновление таблицы
+
+begin
+select * from linn;
+update linn set rahvaArv = rahvaArv*koef
+where linnId = Id;
+select * from linn;
+end
