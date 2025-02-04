@@ -60,3 +60,29 @@ where linnNimi like @taht + '%';
 end;
 -- kutse
 exec linnaotsin T;
+-----------------------------------------------------------------------------
+
+Kasutame XAMPP / localhost
+
+Create table linn(
+linnId int Primary Key AUTO_INCREMENT,
+linnNimi varchar(30),
+rahvaArv int);
+
+Insert into linn(linnNimi, rahvaArv)
+Values ('Narva', 10000)
+
+begin
+Insert into linn(linnNimi, rahvaArv)
+Values(linnNimi, rarv);
+select * from linn;
+end
+
+--удаление
+
+begin
+select * from linn;
+delete from linn where linnId = deletedid;
+select * from linn;
+end
+
