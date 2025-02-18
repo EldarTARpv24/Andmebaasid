@@ -136,7 +136,6 @@ kokk_nimi varchar(30),
 kokk_perenimi varchar(30),                          #Создание и связывание таблицы Kokad
 retsept_id int,
 foreign key (retsept_id) references Retsept(retsept_id))
-drop table Kokad
 --------------------------------------------------
 create procedure Addkokad
 @tehtud_id int,
